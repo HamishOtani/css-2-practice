@@ -1,0 +1,507 @@
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    }
+
+/* paddingの見え方について*/
+.padding.none,
+.padding-top,
+.padding-right,
+.padding-bottom,
+.padding-left{
+    width: 200px;
+    background-color: rgb(191, 231, 179);
+}
+
+.padding-top{
+    padding-top: 10px;
+}
+
+.padding-right{
+    padding-right: 10px;
+}
+
+.padding-bottom{
+    padding-bottom: 10px;
+}
+
+.padding-left{
+    padding-left: 10px;
+}
+
+
+/* paddingの勉強、padding:上 右 下 左;*/
+.padding1,
+.padding2,
+.padding3,
+.padding4{
+    width: 400px;
+    background-color: rgb(177, 193, 249);
+}
+
+.padding1{
+    padding: 10px 0px 10px 0px;
+}
+
+.padding2{
+    padding: 10px 20px 10px 20px;
+}
+
+.padding3{
+    padding: 10px 20px 30px 20px
+}
+
+.padding4{
+    padding: 5px 10px 15px 20px;
+}
+
+
+/* marginの勉強、margin:上 右 下 左;*/
+.margin-none,
+.margin-top,
+.margin-right,
+.margin-bottom,
+.margin-left{
+    width: 200px;
+    background-color: rgb(254, 164, 131);
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.margin-right{
+    margin-right: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+
+/* auto中央表示*/
+.margin-center{
+    width: 200px;
+    background-color: rgb(97, 227, 245);
+    margin:0 auto;
+}
+
+
+/* 中央に表示する方法 */
+.w-25{
+    width: 25%;
+    background-color: rgb(97, 227, 245);
+    text-align: center;
+}
+
+
+/* ブロック要素を中央表示するテクニック */
+.w-25-left,
+.w-25-right,
+.w-25-center{
+    width: 20%;
+    background-color: rgb(127, 239, 239);
+    text-align: center;
+}
+
+
+.w-25-left{
+    margin-right:0 auto;
+}
+
+.w-25-right{
+    margin-left:auto;
+}
+
+.w-25-center{
+    margin: auto;
+}
+
+
+/* テキスト（インライン要素）を中央寄せするテクニック */
+.text-left{
+    text-align: left;
+    background-color: rgb(225, 143, 243);
+}
+
+.text-right{
+    text-align: right;
+    background-color: rgb(225, 143, 243);
+}
+
+.text-center{
+    text-align: center;
+    background-color: rgb(225, 143, 243);
+}
+
+
+/* font-weightの使い方 */
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+.font-weight-800{
+    font-weight: 800;
+}
+
+/* font-weightの文字サイズ確認 */
+.font-weight-100,
+.font-weight-200,
+.font-weight-300,
+.font-weight-400,
+.font-weight-500{
+    background-color: rgb(144, 215, 114);
+}
+
+.font-weight-100{
+    font-weight:100;
+}
+
+.font-weight-200{
+    font-weight:200;
+}
+
+.font-weight-300{
+    font-weight: 300;
+}
+
+.font-weight-400{
+    font-weight: 400;
+}
+
+.font-weight-500{
+    font-weight: 500
+}
+
+
+/* border: 線の太さ 線の種類 線の色 */
+.border-top,
+.border-right,
+.border-bottom,
+.border-left,
+.border{
+    width: 200px;
+    background-color: rgb(224, 206, 206);
+}
+
+.border-top{
+    border-top: 3px solid blue;
+}
+
+.border-right{
+    border-right:3px double blue;
+}
+
+.border-bottom{
+    border-bottom: 3px dashed blue;
+}
+
+.border-left{
+    border-left:3px dotted blue;
+}
+
+.border{
+    border:5px solid blue;
+}
+
+
+/* font-size */
+html{
+    font-size: 62.5%;
+}
+
+
+/* font-size:px,%,rem */
+.font-size-px{
+    font-size: 18px;
+}
+
+.font-size-rem{
+    font-size:  1.8rem;
+}
+
+
+/* フレックスボックスの基本的な書き方 */
+.flex-container{
+    display: flex;
+}
+
+.flex-item1{
+    background-color: khaki;
+}
+
+.flex-item2{
+    background-color: rgb(122, 191, 191);
+}
+
+.flex-item3{
+    background-color: rgb(231, 174, 202);
+}
+
+
+/* flex-direction */
+.flex-container1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item1 {
+    background-color: #ffe194;
+}
+
+.item2 {
+    background-color: #a3cfa7;
+}
+
+.item3 {
+    background-color: #f7dcec;
+}
+
+
+/* justify-content */
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item4 {
+    background-color: #ffe194;
+}
+
+.item5 {
+    background-color: #a3cfa7;
+}
+
+.item6 {
+    background-color: #f7dcec;
+}
+
+
+/* align-items */
+.flex-container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: #ffab94;
+    align-items: baseline;
+
+}
+
+.item7 {
+    background-color: #ffe194;
+}
+
+.item8 {
+    background-color: #a3cfa7;
+    font-size: 2rem;
+}
+
+.item9 {
+    background-color: #f7dcec;
+    font-size: 3rem;
+}
+
+
+/* flex-wrap */
+.flex-container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: rgb(208, 204, 204);
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.item10 {
+    background-color: #ffe194;
+}
+
+.item11 {
+    background-color: #a3cfa7;
+    font-size: 2rem;
+}
+
+.item12 {
+    background-color: #f7dcec;
+    font-size: 3rem;
+}
+
+
+/* flex-grow */
+.flex-container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: #f5ebf1;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.item13 {
+    background-color: #ffe194;
+    flex-grow: 1;
+}
+
+.item14 {
+    background-color: #a3cfa7;
+    flex-grow: 2;
+}
+
+.item15 {
+    background-color: #f7dcec;
+    flex-grow: 3;
+}
+
+/* flex-shrink */
+.flex-container6{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: #f5ebf1;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.item16 {
+    background-color: #ffe194;
+    flex-shrink: 1;
+}
+
+.item17 {
+    background-color: #a3cfa7;
+    flex-shrink: 2;
+}
+
+.item18 {
+    background-color: #f7dcec;
+    flex-shrink: 3;
+}
+
+/* flex-basis */
+.flex-container7{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: rgb(142, 181, 255);
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.item19{
+    background-color: #ffe194;
+    flex-basis: 100px;
+}
+
+.item20{
+    background-color: #a3cfa7;
+    flex-basis: 200px;
+}
+
+.item21{
+    background-color: #f7dcec;
+    flex-basis: 300px;
+}
+
+/* flex */
+.flex-container8{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 150px;
+    background-color: rgb(142, 181, 255);
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.item22{
+    background-color: #ffe194;
+    flex: 11 auto;
+}
+
+.item23{
+    background-color: #a3cfa7;
+    flex: 2 1 auto;
+}
+
+.item24{
+    background-color: #f7dcec;
+    flex: 3 1 auto;
+}
+
+@media (min-width: 900px) {}
+
+/* 【超入門】初心者必見！10分でわかるFlexbox講座 */
+/* display:flex */
+.container-a1{
+    background-color: #dcd7d7;
+    display: flex;
+} 
+
+.item-a1{
+    background-color: #ffe194;
+
+}
+
+.item-a2{
+    background-color: #a3cfa7;
+}
+
+.item-a3{
+    background-color: #d371ac;
+}
+
+.item-a4{
+    background-color: #72d3e2;
+}
+
+.item-a5{
+    background-color: #8e84e8;
+}
+
+/* flex-wrap:wrap　ボックス並べ替え */
+.container-a2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    padding: 10px;
+    margin: 30px;
+    background-color: #afb1b2;
+    font-size: 30px;
+}
+
+.item-a6{
+    background-color: rgb(0, 115, 255);
+    color: #ffffff;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    margin: 1%;
+    line-height:100px;
+    text-align: center;
+}
+
+.item-a7{
+    background-color: rgb(133, 214, 255);
+    color: #ffffff;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    margin: 1%;
+    line-height:100px;
+    text-align: center;
+}
+
+

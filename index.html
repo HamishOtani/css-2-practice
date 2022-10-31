@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <p>余白の学習</p>
+        <img src="./img/logo.png" alt="logo">
+    </div>
+    <!-- paddingの見え方について -->
+    <p class="padding-none">padding-noneの指定なし</p>
+    <p class="padding-top">上のpaddingの指定</p>
+    <p class="padding-right">右のpaddingの指定</p>
+    <p class="padding-bottom">下のpaddingの指定</p>
+    <p class="padding-left">左のpaddingの指定</p>
+    <br>
+    <!-- paddingの実践 -->
+    <p class="padding1">paddingの指定:上下左右10px</p>
+    <p class="padding2">paddingの指定:上下10px, 左右20px</p>
+    <p class="padding3">paddingの指定: 上10px, 下30px, 左20px, 右20px</p>
+    <p class="padding4">paddingの指定: 上5px, 下15px, 右10px, 左20px</p>
+    <br>
+    <!-- marginの勉強、margin:上 右 下 左; -->
+    <p class="margin-none">marginの指定なし</p>
+    <p class="margin-top">上のmarginの設定</p>
+    <p class="margin-right">右のmarginの指定</p>
+    <p class="margin-bottom">下のmarginの指定</p>
+    <p class="margin-left">左のmarginの指定</p>
+    <br>
+    <p class="margin-center">margin-center</p>
+    <br>
+    <!-- ブロック要素を中央表示するテクニック -->
+    <p class="w-25">w-25</p>
+    <p class="w-25-left">左に表示されています</p>
+    <p class="w-25-right">右に表示されています</p>
+    <p class="w-25-center">中央に表示されています</p>
+    <br>
+    <!-- テキスト（インライン要素）を中央寄せするテクニック -->
+    <p class="text-left">左寄せされています</p>
+    <p class="text-right">右寄せされています</p>
+    <p class="text-center">中央寄せされています</p>
+    <br>
+    <!-- font-weightの使い方 -->
+    <p class="font-weight">文字の太さ：指定なし</p>
+    <p class="font-weight-bold">文字の太さ:bold</p>
+    <p class="font-weight-700">文字の太さ:700</p>
+    <p class="font-weight-800">文字の太さ:800</p>
+    <br>
+    <!-- font-weightの文字サイズ確認 -->
+    <p class="font-weight-100">文字の太さ:100</p>
+    <p class="font-weight-200">文字の太さ:200</p>
+    <p class="font-weight-300">文字の太さ:300</p>
+    <p class="font-weight-400">文字の太さ:400</p>
+    <p class="font-weight-500">文字の太さ:500</p>
+    <br>
+    <!-- border: 線の太さ 線の種類 線の色; -->
+    <p class="border-top">上のborderの指定</p>
+    <p class="border-right">右のborderの指定</p>
+    <p class="border-bottom">下のborderの指定</p>
+    <p class="border-left">左のborderの指定</p>
+    <p class="border">borderの指定</p>
+    <br>
+    <!-- font-size:px,%,rem-->
+    <p class="font-size">フォントサイズ指定:指定なし</p>
+    <p class="font-size-px">フォントサイズ指定:px</p>
+    <p class="font-size-rem">フォントサイズ指定:rem</p>
+    <!-- フレックスボックスの基本的な書き方 -->
+    <div class="flex-container">
+        <div class="flex-item1">アイテム1</div>
+        <div class="flex-item2">アイテム2</div>
+        <div class="flex-item3">アイテム3</div>
+    </div>
+    <br>
+    <!-- flex-direction -->
+    <div class="flex-container1">
+        <div class="item1">アイテム1</div>
+        <div class="item2">アイテム2</div>
+        <div class="item3">アイテム3</div>
+    </div>
+    <br>
+    <!-- justify-content  -->
+    <div class="flex-container2">
+        <div class="item4">アイテム4</div>
+        <div class="item5">アイテム5</div>
+        <div class="item6">アイテム6</div>
+    </div>
+    <br> 
+    <!-- align-items   -->
+    <div class="flex-container3">
+        <div class="item7">アイテム7</div>
+        <div class="item8">アイテム8</div>
+        <div class="item9">アイテム9</div>
+    </div> 
+    <br>
+    <!-- flex-wrap -->
+    <div class="flex-container4">
+        <div class="item10">アイテム10</div>
+        <div class="item11">アイテム11</div>
+        <div class="item12">アイテム12</div>            
+    </div> 
+    <br>
+    <!-- flex-grow -->
+    <div class="flex-container5">
+        <div class="item13">アイテム13</div>
+        <div class="item14">アイテム14</div>
+        <div class="item15">アイテム15</div>            
+    </div> 
+    <br>
+    <!-- flex-shrink -->
+    <div class="flex-container6">
+        <div class="item16">アイテム16</div>
+        <div class="item17">アイテム17</div>
+        <div class="item18">アイテム18</div>            
+    </div>  
+    <br>
+    <!-- flex-basis -->
+    <div class="flex-container7">
+        <div class="item19">アイテム19</div>
+        <div class="item20">アイテム20</div>
+        <div class="item21">アイテム21</div>            
+    </div>
+    <br>
+    <!-- flex -->
+    <div class="flex-container8">
+        <div class="item22">アイテム22</div>
+        <div class="item23">アイテム23</div>
+        <div class="item24">アイテム24</div>            
+    </div>
+    <br>
+    <!-- Web神様【超入門】初心者必見！10分でわかるFlexbox講座 -->
+    <div class="container-a1">
+        <div class="item-a1">1つ目の要素</div>
+        <div class="item-a2">2つ目の要素</div>
+        <div class="item-a3">3つ目の要素</div>
+        <div class="item-a4">4つ目の要素</div>
+        <div class="item-a5">5つ目の要素</div>
+    </div>
+    <br>
+    
+    <div class="container-a2">
+        <div class="item-a6">1</div>
+        <div class="item-a7">2</div>
+        <div class="item-a6">3</div>
+        <div class="item-a7">4</div>
+        <div class="item-a6">5</div>
+    </div>
+    <br>
+</body> 
+</html>
